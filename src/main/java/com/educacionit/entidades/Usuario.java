@@ -9,9 +9,9 @@ public class Usuario {
 	private String clave;
 	private Date fechaActualizacion;
 	private Date fechaCreacion;
-	
+
 	public Usuario() {
-	
+
 	}
 
 	public Usuario(String correo, String clave, Date fechaActualizacion, Date fechaCreacion) {
@@ -22,11 +22,9 @@ public class Usuario {
 		this.fechaCreacion = fechaCreacion;
 	}
 
-	
-	
 	@Override
 	public String toString() {
-		return "Usuario [correo=" + correo + ", clave=" + clave + ", fechaActualizacion=" + fechaActualizacion
+		return "Usuario [correo=" +  correo + ", clave=" + clave + ", fechaActualizacion=" + fechaActualizacion
 				+ ", fechaCreacion=" + UtilidadesFecha.getFechaAString(fechaCreacion) + "]";
 	}
 
@@ -61,7 +59,5 @@ public class Usuario {
 	public void setFechaCreacion(Date fechaCreacion) {
 		this.fechaCreacion = fechaCreacion;
 	}
-	
-	
 
 }
